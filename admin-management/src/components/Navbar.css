@@ -1,0 +1,26 @@
+/* src/components/Navbar.css */
+.nav-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid transparent; /* Couleur de bordure par défaut */
+    border-radius: 5px;
+    background-color: transparent; /* Couleur de fond par défaut */
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s; /* Pour les transitions */
+    width: 100%; /* Prendre toute la largeur */
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Couleur de fond au survol */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ombre autour du bouton au survol */
+    border-color: #007BFF; /* Couleur de bordure au survol */
+}
+
+.nav-button.active {
+    background-color: rgba(0, 123, 255, 0.2); /* Couleur de fond pour le bouton actif */
+    border-color: #007BFF; /* Couleur de bordure pour le bouton actif */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* Ombre pour le bouton actif */
+}
